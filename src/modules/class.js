@@ -27,7 +27,7 @@ export default class Books {
         localStorage.setItem('books', JSON.stringify(this.toDoTasks));
       };
 
-      remove(ids) {
+      remove = (ids) => {
         this.toDoTasks = this.toDoTasks.filter((element) => element.index !== ids);
         this.renewIndex();
         this.saveToDoList();
